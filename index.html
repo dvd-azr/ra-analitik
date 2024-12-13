@@ -61,6 +61,10 @@
   <!--begin::Custom Javascript(used for this page only)-->
   <script src="assets/js/widgets.bundle.js"></script>
   <script src="assets/js/custom/widgets.js"></script>
+  <script>
+    const og_image = document.querySelector('meta[property="og:image"]');
+    og_image.setAttribute('content', window.location.origin + og_image.getAttribute('content'));
+  </script>
 
 </body>
 
